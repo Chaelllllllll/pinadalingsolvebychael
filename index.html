@@ -31,9 +31,13 @@
 			font-size: 18px;
 			font-weight: bold;
 		}
+		.place{
+            	text-align: center;
+        }
 	</style>
 </head>
 <body>
+	<div class = "place">
 	<h1>Solve for:</h1>
 	<label for="standard-deviation">Standard Deviation:</label>
 	<input type="number" id="standard-deviation" placeholder="Enter Standard Deviation">
@@ -44,6 +48,7 @@
     <label for="critical">Critical Number(Za/2):</label>
 	<input type="number" id="critical" placeholder="Enter Critical Number Za/2">
 	<button onclick="calculate()">Calculate</button>
+		</div>
 	<div class="result">
 		<p>Standard Error: <span id="standard-error"></span></p>
 		<p>Critical Number: <span id="critical-number"></span></p>
