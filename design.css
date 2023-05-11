@@ -1,0 +1,11 @@
+input[type=number] {
+    width: 100px;
+  }
+  
+  button {
+    margin-top: 10px;
+  }
+  
+  div > p {
+    margin-bottom: 5px;
+  }
