@@ -7,7 +7,8 @@ document.getElementById("calculator").addEventListener("submit", function (event
     const criticalnum = Number(document.getElementById("critical").value);
   
     const standardError = populationStdDev / Math.sqrt(sampleSize);
-    const criticall1 = 1 - confidenceLevel;
+    const criticall = confidenceLevel/100;
+    const criticall1 = 1 - criticall;
     const criticall2 = criticall1/2;
     const criticall3 = 0.5-criticall2;
     const marginOfError = criticalnum * standardError;
